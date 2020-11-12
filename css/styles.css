@@ -12,6 +12,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Livvic", "Arial", sans-serif;
+  -webkit-animation:bg 45s linear infinite forwards;
+  animation:bg 45s linear infinite forwards;
 }
 
 img {
@@ -21,4 +23,68 @@ img {
 
 h1 {
   font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+}
+
+.password-label {
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 8px;
+  margin: 0 auto;
+}
+
+.password-label::after {
+  content: "🤨";
+  font-size: 40px;
+  font-weight: 100;
+  animation: emoji 5s linear infinite;
+  margin-left: 6px;
+}
+
+.password-input {
+  padding-right: 35px;
+}
+
+.toggle-password {
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+.password-check-btn {
+  letter-spacing: 1px;
+}
+
+@keyframes bg{0%{background-color:#e26262}1%{background-color:#e27162}2%{background-color:#e28162}3%{background-color:#e29062}4%{background-color:#e29f62}5%{background-color:#e2af62}6%{background-color:#e2be62}7%{background-color:#e2ce62}8%{background-color:#e2dd62}9%{background-color:#d8e262}10%{background-color:#c8e262}11%{background-color:#b9e262}12%{background-color:#aae262}13%{background-color:#9ae262}14%{background-color:#8be262}15%{background-color:#7ce262}16%{background-color:#6ce262}17%{background-color:#62e267}18%{background-color:#62e276}19%{background-color:#62e286}20%{background-color:#62e295}21%{background-color:#62e2a5}22%{background-color:#62e2b4}23%{background-color:#62e2c3}24%{background-color:#62e2d3}25%{background-color:#62e2e2}26%{background-color:#62d3e2}27%{background-color:#62c3e2}28%{background-color:#62b4e2}29%{background-color:#62a5e2}30%{background-color:#6295e2}31%{background-color:#6286e2}32%{background-color:#6276e2}33%{background-color:#6267e2}34%{background-color:#6c62e2}35%{background-color:#7c62e2}36%{background-color:#8b62e2}37%{background-color:#9a62e2}38%{background-color:#aa62e2}39%{background-color:#b962e2}40%{background-color:#c862e2}41%{background-color:#d862e2}42%{background-color:#e262dd}43%{background-color:#e262ce}44%{background-color:#e262be}45%{background-color:#e262af}46%{background-color:#e2629f}47%{background-color:#e26290}48%{background-color:#e26281}49%{background-color:#e26271}50%{background-color:#e26262}51%{background-color:#e27162}52%{background-color:#e28162}53%{background-color:#e29062}54%{background-color:#e29f62}55%{background-color:#e2af62}56%{background-color:#e2be62}57%{background-color:#e2ce62}58%{background-color:#e2dd62}59%{background-color:#d8e262}60%{background-color:#c8e262}61%{background-color:#b9e262}62%{background-color:#aae262}63%{background-color:#9ae262}64%{background-color:#8be262}65%{background-color:#7ce262}66%{background-color:#6ce262}67%{background-color:#62e267}68%{background-color:#62e276}69%{background-color:#62e286}70%{background-color:#62e295}71%{background-color:#62e2a5}72%{background-color:#62e2b4}73%{background-color:#62e2c3}74%{background-color:#62e2d3}75%{background-color:#62e2e2}76%{background-color:#62d3e2}77%{background-color:#62c3e2}78%{background-color:#62b4e2}79%{background-color:#62a5e2}80%{background-color:#6295e2}81%{background-color:#6286e2}82%{background-color:#6276e2}83%{background-color:#6267e2}84%{background-color:#6c62e2}85%{background-color:#7c62e2}86%{background-color:#8b62e2}87%{background-color:#9a62e2}88%{background-color:#aa62e2}89%{background-color:#b962e2}90%{background-color:#c862e2}91%{background-color:#d862e2}92%{background-color:#e262dd}93%{background-color:#e262ce}94%{background-color:#e262be}95%{background-color:#e262af}96%{background-color:#e2629f}97%{background-color:#e26290}98%{background-color:#e26281}99%{background-color:#e26271}100%{background-color:#e26262}}
+
+@keyframes emoji {
+  0% {
+    content: "🙂";
+  }
+  20% {
+    content: "😄";
+  }
+  40% {
+    content: "😉";
+  }
+  60% {
+    content: "😁";
+  }
+  80% {
+    content: "😊";
+  }
+  100% {
+    content: "🤨";
+  }
 }
