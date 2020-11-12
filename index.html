@@ -20,15 +20,24 @@
         <div class="form-group position-relative mb-4">
           <label class="password-label d-flex align-items-center justify-content-center h2 mb-4"
             for="password-input">Parolingizni kiriting</label>
+          <p>Urunishlar soni:
+            <span class="js-password-attempts">5</span> ta
+          </p>
           <input class="password-input form-control js-password-input" id="password-input" name="password"
-            type="password" placeholder="Password (min 6 characters)" pattern=".{6,}" title="6 characters minimum"
-            required>
+            type="password" placeholder="Password (min 6 characters)" pattern=".{6,}" minlength="6"
+            title="6 characters minimum" required>
           <i class="toggle-password far fa-eye position-absolute js-toggle-password"></i>
         </div>
 
         <button class="password-check-btn btn btn-info align-self-center text-uppercase"
           type="submit">Tekshiramiz</button>
       </form>
+
+      <div class="flex-column p-5 bg-light rounded d-none js-results-div">
+        <p class="h2 text-center js-result-text mb-3"></p>
+        <button class="btn btn-outline-danger align-self-center d-none js-reload-button">Qaytadan urunib
+          ko'rish</button>
+      </div>
     </div>
   </section>
 
